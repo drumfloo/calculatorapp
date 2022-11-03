@@ -1,0 +1,100 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+  }
+  
+  *, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    background-color: #252525;
+  }
+  
+  .calculator {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;    
+  }
+
+  
+  .calculator-screen {
+    width: 100%;
+    font-size: 5rem;
+    height: 80px;
+    border: none;
+    background-color: #252525;
+    color: #fff;
+    text-align: right;
+    padding-right: 20px;
+    padding-left: 10px;
+  }
+  
+  button {
+    height: 60px;
+    background-color: #3f3f3f;
+    border: 1px solid #a5a5a5;
+    font-size: 2rem;
+    color:#e7e7e7;
+    background-image: linear-gradient(to bottom,transparent,transparent 50%,rgba(0,0,0,.04)); 
+  }
+  
+  button:hover {
+    background-color: #3f3f3f;
+    opacity: 0.6;
+    transition: 0.3s
+  }
+  
+  .operator {
+    color: #e7e7e7;
+    
+  }
+  
+  .all-clear {
+    background-color: rgb(143, 24, 24);
+    color: #fff;
+    
+  }
+  
+  .all-clear:hover {
+    background-color: rgb(136, 12, 12); 
+    transition: 0.3s;
+  }
+  
+  .equal-sign {
+    background-color: #3f3f3f;
+    color: #fff;
+    height: 200%;
+
+    /* grid-area: 4 / 4 / 3 / 5;  */
+    /* 5 / 4 / 3/ 5;  */
+    /* 2 / 4 / 6 / 5; */
+    
+  }
+  
+  .equal-sign:hover {
+    /* background-color: #9ceead; */
+    transition: 0.3s;
+  }
+  
+  .calculator-keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: flex;
+    padding: flex;
+  }
+
+/* html {
+ margin:0px;
+ height:100%;
+ width:100%;
+
+ background:url('/assets/ZIMGRP_Z_Blue_Plot.jpg')no-repeat center center fixed; 
+ -webkit-background-size:cover;
+ -o-background-size:cover;
+ -moz-background-size:cover;
+ background-size:contain;
+} */
