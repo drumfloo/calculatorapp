@@ -2,6 +2,14 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.1.
 
+First app using Angular and TS. Feel free to use it or modify/extend it. Maybe i find time to bring it to Angular 16.
+Its very basic an was needed because of missing system-calculator on Windows. 
+(Microsoft forces a connection to a microsoft server just for starting the calculator app. Network regulations doesnt allow this
+in some of my usecases.)
+
+If time allows, i do a makeover to bring all functionalitys a regular calculator needs and do some eye-candy.
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
