@@ -91,26 +91,7 @@ export class CalculatorComponent implements OnInit {
   // public getOperation(op: string){
   //   console.log(op);
 
-  //   if(op === '-'){      // <<<
-  //     this.currentNumber = op;             
-  //   }
-  //   // frisch geändert
-  //   if(op === '-' && this.firstOperand !== 0){
-  //     let localNum = String(this.firstOperand);
-  //     let localStrTemp = this.currentNumber + localNum ;
-  //     this.firstOperand = Number(localStrTemp);
-  //   }
-  //   else if(this.operator){
-  //     const result = this.doCalculation(this.operator, Number(this.currentNumber))
-  //     this.currentNumber = String(result);
-  //     this.firstOperand = result!;
-  //   }
-  //   this.operator = op;
-  //   this.waitForSecondNumber = true;
 
-  //   console.log(this.firstOperand);
-
-  // }
 
 
   getDecimal(){
