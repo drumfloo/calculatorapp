@@ -11,20 +11,8 @@ html {
 
 body{
   background-color:#999999;
- 
-  /* background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c); */
-}
+ }
 
 
-/* html
-{
- margin:0px;
- height:100%;
- width:100%;
-
- background:url('/assets/ZIMGRP_Z_Blue_Plot.jpg')no-repeat center center fixed; 
- -webkit-background-size:cover;
- -o-background-size:cover;
- -moz-background-size:cover;
- background-size:contain;
-} */
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
