@@ -1,5 +1,4 @@
 import { Component, HostListener, OnInit } from '@angular/core';
-import { ArgumentOutOfRangeError } from 'rxjs';
 
 
 @Component({
@@ -87,11 +86,12 @@ export class CalculatorComponent implements OnInit {
     console.log(this.isNegativ);
   }
 
-
-  // public getOperation(op: string){
-  //   console.log(op);
-
-
+  rotation = 0;
+  flipIt(){
+    this.rotation += 180;    
+    document.getElementById("flip-it")!.style.transform = `rotate(${this.rotation}deg)`;
+    //document.getElementById("flip-it")!.style.transform = `scale(5  , 5)`;    
+  }
 
 
   getDecimal(){
