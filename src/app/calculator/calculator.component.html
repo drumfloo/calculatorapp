@@ -1,4 +1,10 @@
-<div id="flipID" class="calculator">
+<div class="container">
+
+  <!-- <div class="history-viewer">
+    <app-history-log></app-history-log>
+  </div> -->
+
+  <div class="calculator">
 
     <input type="text" class="calculator-screen" [value]="currentNumber" disabled autofocus />
     
@@ -27,5 +33,11 @@
       <button id="number-button" type="button" (click) = "getDecimal()" class="decimal" value=".">.</button>
       <button type="button" (click) = "clear()"  class="all-clear" value="all-clear">AC</button>
       <button type="button" id="flip-it" (click)="flipIt()"></button> 
-    </div>
+    </div> 
   </div>
+  <textarea class="history-viewer" id="story" name="story" readonly rows=50% cols=20%>
+    History  
+  </textarea>
+</div>
+
+

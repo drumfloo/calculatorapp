@@ -1,6 +1,5 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 
-
 @Component({
   selector: 'app-calculator',
   templateUrl: './calculator.component.html',
@@ -17,7 +16,7 @@ export class CalculatorComponent implements OnInit {
   sqRootFlag: boolean = true;
 
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit(): void {
   }
@@ -40,7 +39,7 @@ export class CalculatorComponent implements OnInit {
     
 
   public getNumber(v: string){
-    console.log(v);
+    //console.log(v);
     
     if(this.waitForSecondNumber)
     {
@@ -140,5 +139,9 @@ export class CalculatorComponent implements OnInit {
     this.isNegativ = false;
   }
 
-
+  showHistory(){
+    console.log("showHistory()", this.currentNumber)
+    document.getElementById('story')!.innerText = this.currentNumber;
+  }
+    
 }

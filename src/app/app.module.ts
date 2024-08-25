@@ -4,16 +4,19 @@ import { AppComponent } from './app.component';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { ToolbarComponent } from "./toolbar/toolbar.component";
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { HistoryLogComponent } from './history-log/history-log.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CalculatorComponent,
     
+    
   ],
   imports: [
     BrowserModule,
-    ToolbarComponent
+    ToolbarComponent,
+    HistoryLogComponent,
 ],
   providers: [
     provideAnimationsAsync()

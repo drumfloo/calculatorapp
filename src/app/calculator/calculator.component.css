@@ -1,83 +1,98 @@
-html {
+/* html {
     font-size: 62.5%;
     box-sizing: border-box;
     
-  }
+  } */
 
-  *, *::before, *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
-  }
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
 
-  .calculator {
-    background-image: url("src/assets/background1920x1080.png");
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 55%;
+.container{
+  
 
-  }
+}
 
 
-  .calculator-screen {
-    width: 100%;
-    font-size: 5rem;
-    height: 80px;
-    border: none;
-    text-align: right;
-    padding-right: 20px;
-    padding-left: 10px;
-  }
+.calculator {
+  background-image: url("src/assets/background1920x1080.png");
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 55%;
 
-  #number-button{
-    
-  }
+}
+  
+.history-viewer{
+  font-size: 20px;
+  resize: none;
+
+}
 
 
-  button {
-    height: 60px;
-    border: 1px solid #073b4c;
-    font-size: 2rem;
-    color: #073b4c;
-    background-color: #118ab2;
-    transition: background-color 0.5s, color 0.5s;
-  }
 
-  button:hover {
-    background-color: transparent;    
-    color: whitesmoke;
-  }
+.calculator-screen {
+  width: 100%;
+  font-size: 10rem;
+  height: 80px;
+  border: none;
+  text-align: right;
+  padding-right: 20px;
+  padding-left: 10px;
+  background-color: transparent; 
+  color: whitesmoke;
+}
 
-  .operator {
-    color:  #ffd166;
-    font-weight: bold;
-  }
+#number-button{
+  font-size: 40px;
+  
+}
 
-  .all-clear {
-    background-color: #ef476f;
-    color: whitesmoke ;
 
-  }
+button {
+  height: 60px;
+  border: 1px solid #073b4c;
+  font-size: 2rem;
+  color: #073b4c;
+  background-color: #118ab2;
+  transition: background-color 0.5s, color 0.5s;
+}
 
-  .all-clear:hover {
-    background-color: rgb(136, 12, 12);
-    transition: 0.3s;
-  }
+button:hover {
+  background-color: transparent;    
+  color: whitesmoke;
+}
 
-  .equal-sign {
-    
-  }
+.operator {
+  color:  #ffd166;
+  font-weight: bold;
+  font-size: 32px;
+}
 
-  .equal-sign:hover {
-    transition: 0.3s;
-  }
+.all-clear {
+  background-color: #ef476f;
+  color: whitesmoke;
+  font-size: 40px;
 
-  .calculator-keys {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: flex;
-    padding: flex;
-  }
+}
+
+.all-clear:hover {
+  background-color: rgb(136, 12, 12);
+  transition: 0.3s;
+}
+
+
+.equal-sign:hover {
+  transition: 0.3s;
+}
+
+.calculator-keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: flex;
+  padding: flex;
+}
 
