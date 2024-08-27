@@ -11,6 +11,8 @@ export class CalculatorComponent implements OnInit {
   firstOperand: number = 0;
   operator: string = '';
 
+  tempHistory: string = '';
+
   waitForSecondNumber: boolean = false;
   isNegativ:boolean = false;
   sqRootFlag: boolean = true;
@@ -40,7 +42,6 @@ export class CalculatorComponent implements OnInit {
 
   public getNumber(v: string){
     //console.log(v);
-    
     if(this.waitForSecondNumber)
     {
       this.currentNumber = v;
@@ -52,6 +53,7 @@ export class CalculatorComponent implements OnInit {
 
     if(this.isNegativ){
       this.currentNumber = '-' + this.currentNumber;
+      
     }
     else{
       this.currentNumber = this.currentNumber.replace('-','');
@@ -61,6 +63,7 @@ export class CalculatorComponent implements OnInit {
 
   public getOperation(op: string){
     console.log(op);
+
     this.isNegativ = false;
 
     if(this.firstOperand === 0){ //null
@@ -76,10 +79,9 @@ export class CalculatorComponent implements OnInit {
     this.waitForSecondNumber = true;
 
     console.log(this.firstOperand);
-
+    this.showHistory()
   }
-
-
+  
   public setNegativ(){
     this.isNegativ = !this.isNegativ;
     console.log(this.isNegativ);
@@ -103,21 +105,27 @@ export class CalculatorComponent implements OnInit {
   private doCalculation(op: string , secondOp: number){
     switch (op){
       case '+':
+        //this.tempHistory += ' + ';
         return this.firstOperand += secondOp; 
       
-      case '-': 
+      case '-':
+        //this.tempHistory += ' - ';
         return this.firstOperand -= secondOp; 
       
-      case '*': 
+      case '*':
+        //this.tempHistory += ' * ';
         return this.firstOperand *= secondOp; 
       
-      case '/': 
+      case '/':
+        //this.tempHistory += ' : ';
         return this.firstOperand /= secondOp; 
       
       case '=':
+        //this.tempHistory += ' = ';
         return secondOp;
       
       case 'sqrt':
+        //this.tempHistory += ' &radic; ';
         return ""+  this.sqRoot();
 
       default: return "error"
@@ -140,8 +148,10 @@ export class CalculatorComponent implements OnInit {
   }
 
   showHistory(){
-    console.log("showHistory()", this.currentNumber)
-    document.getElementById('story')!.innerText = this.currentNumber;
+    //console.log("showHistory()", this.currentNumber)
+    // document.getElementById('story')!.innerText = this.tempHistory;
+    
+  
   }
     
 }

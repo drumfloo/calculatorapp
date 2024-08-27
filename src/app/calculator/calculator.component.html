@@ -35,9 +35,10 @@
       <button type="button" id="flip-it" (click)="flipIt()"></button> 
     </div> 
   </div>
-  <textarea class="history-viewer" id="story" name="story" readonly rows=50% cols=20%>
+  <!-- <textarea class="history-viewer" id="story" name="story" readonly rows=50% cols=20%>
     History  
-  </textarea>
+  </textarea> -->
+  <textarea class="history-viewer" [value]="tempHistory" readonly rows=50% cols=20%> History </textarea>
 </div>
 
 
