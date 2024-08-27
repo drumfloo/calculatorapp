@@ -1,13 +1,13 @@
 <div class="container">
 
-  <!-- <div class="history-viewer">
-    <app-history-log></app-history-log>
-  </div> -->
-
+ 
+  <div class="history-container">
+    <textarea class="history-viewer" [value]="tempHistory" readonly> History </textarea>
+    <!-- rows=50% cols=20% -->
+  </div>
   <div class="calculator">
 
     <input type="text" class="calculator-screen" [value]="currentNumber" disabled autofocus />
-    
     <div class="calculator-keys">      
       <button type="button" (click) = "getOperation('+')" class="operator" value="+">+</button>
       <button type="button" (click) = "getOperation('-')" class="operator" value="-">-</button>
@@ -38,7 +38,7 @@
   <!-- <textarea class="history-viewer" id="story" name="story" readonly rows=50% cols=20%>
     History  
   </textarea> -->
-  <textarea class="history-viewer" [value]="tempHistory" readonly rows=50% cols=20%> History </textarea>
+  
 </div>
 
 

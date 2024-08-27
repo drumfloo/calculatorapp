@@ -11,25 +11,29 @@
 }
 
 .container{
-  
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+
 
 }
 
 
 .calculator {
   background-image: url("src/assets/background1920x1080.png");
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 55%;
 
 }
   
-.history-viewer{
-  font-size: 20px;
-  resize: none;
+.history-container{
+  margin-right: 15px;
+  width: 15%;
 
+}
+
+.history-viewer{
+  resize: none;
+  height: 100%;
+  width: 100%;
 }
 
 
